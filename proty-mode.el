@@ -32,3 +32,9 @@
   (setq proty-keywords-regexp nil)
   (setq proty-constants-regexp nil)
 )
+
+;;;###autoload
+(setq auto-mode-alist
+  (cons '("\\.pr" . proty-mode) auto-mode-alist))
+
+(provide 'proty-mode)
